@@ -1,7 +1,8 @@
 import {StyleSheet} from 'react-native';
+import Colors from '../../assets/colors/Colors';
 
 export const styles = StyleSheet.create({
-  container: {backgroundColor: 'blue', flex: 1},
+  container: {backgroundColor: Colors.inputBg, flex: 1},
   bank: {
     fontWeight: '700',
     fontSize: 36,
@@ -27,7 +28,7 @@ export const styles = StyleSheet.create({
   },
   ellipse2: {
     position: 'absolute',
-    top: -230,
+    top: -200,
   },
   ellipse3: {
     flexDirection: 'row',

@@ -1,15 +1,16 @@
 import {StyleSheet} from 'react-native';
+import Colors from '../../assets/colors/Colors';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: Colors.white,
     flex: 1,
     padding: 20,
   },
   ellipse: {
     alignItems: 'center',
     flexDirection: 'row',
-    marginTop: 40,
+    marginTop: 10,
     justifyContent: 'space-between',
   },
   ellipse3: {
@@ -27,9 +28,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    // width: 125,
-    // backgroundColor: 'green',
-    marginTop: 20,
+    marginTop: 40,
   },
   transText: {
     fontWeight: '500',
@@ -40,5 +39,54 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
     fontSize: 14,
     color: '#FE6310',
+  },
+  logo: {
+    flexDirection: 'row',
+    marginTop: 20,
+    justifyContent: 'space-between',
+  },
+  textCont: {
+    marginTop: 5,
+    marginRight: 110,
+  },
+  Text: {
+    fontSize: 14,
+    fontWeight: 500,
+    color: '#002D57',
+  },
+  text2: {
+    fontSize: 12,
+    fontWeight: 500,
+    color: '#A5A5A5',
+    marginTop: 5,
+  },
+  text3: {
+    fontWeight: 700,
+    fontSize: 14,
+    color: '#002D57',
+  },
+  card: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#000',
+  },
+  scroll: {
+    marginTop: 20,
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  dot: {
+    marginTop: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
+  dotImage: {
+    marginLeft: 5,
+  },
+  Bottom: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 10,
   },
 });

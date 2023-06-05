@@ -1,9 +1,19 @@
 import React from 'react';
-import {View, Image, Text, ImageBackground} from 'react-native';
+import {
+  View,
+  Image,
+  Text,
+  ImageBackground,
+  TouchableOpacity,
+} from 'react-native';
 import Button from '../../components/Button';
 import {styles} from './HomeStyle';
 
-function Home() {
+function Home({navigation}) {
+  const handlePress = () => {
+    navigation.navigate('SecondScreen');
+  };
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -29,9 +39,9 @@ function Home() {
         />
       </View>
       <Button title={'Create Account'} />
-      <View style={styles.member}>
+      <TouchableOpacity style={styles.member} onPress={handlePress}>
         <Text style={styles.memberText}>Already Member?</Text>
-      </View>
+      </TouchableOpacity>
     </View>
   );
 }
