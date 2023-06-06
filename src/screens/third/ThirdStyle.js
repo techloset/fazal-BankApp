@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import Colors from '../../assets/colors/Colors';
+// import {fonts} from '../../assets/fonts';
 
 export const styles = StyleSheet.create({
   container: {
@@ -23,7 +24,7 @@ export const styles = StyleSheet.create({
   },
   text2: {
     fontSize: 24,
-    fontWeight: 700,
+    fontFamily: 'Inter-Bold',
     color: '#fff',
     marginTop: 20,
   },
@@ -34,12 +35,12 @@ export const styles = StyleSheet.create({
   },
   text3: {
     fontSize: 18,
-    fontWeight: 600,
+    fontFamily: 'Inter-SemiBold',
     color: '#fff',
   },
   text4: {
     fontSize: 18,
-    fontWeight: 600,
+    fontFamily: 'Inter-SemiBold',
     color: '#fff',
     marginRight: 100,
   },

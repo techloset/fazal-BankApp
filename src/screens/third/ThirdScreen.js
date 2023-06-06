@@ -42,11 +42,12 @@ function ThirdScreen(props) {
         </ImageBackground>
       </View>
       <View style={styles.view2}>
-        <Text style={{fontSize: 16, fontWeight: 300}}>Weekly | </Text>
-        <Text style={{fontSize: 16, fontWeight: 500, color: '#002D57'}}>
+        <Text style={{fontSize: 16, fontFamily: 'Inter-Light'}}>Weekly | </Text>
+        <Text
+          style={{fontSize: 16, fontFamily: 'Inter-Medium', color: '#002D57'}}>
           Monthly
         </Text>
-        <Text style={{fontSize: 16, fontWeight: 300}}> | Yearly</Text>
+        <Text style={{fontSize: 16, fontFamily: 'Inter-Light'}}> | Yearly</Text>
       </View>
       <ImageBackground
         source={require('../../assets/images/Vector10.png')}

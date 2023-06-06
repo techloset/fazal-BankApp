@@ -3,6 +3,7 @@ const inputBg = '#002D57';
 const inputBgLine = '#FE6310';
 const button = '#FFD703';
 const card = '#FFD703';
+const green = '#72FF03';
 
 export default {
   white,
@@ -10,4 +11,5 @@ export default {
   inputBgLine,
   button,
   card,
+  green,
 };

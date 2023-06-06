@@ -72,14 +72,19 @@ export const styles = StyleSheet.create({
   },
   scroll: {
     marginTop: 20,
+    // marginLeft: 20,
     flexDirection: 'row',
     justifyContent: 'center',
   },
   dot: {
-    marginTop: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
+    // marginTop: 10,
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // flexDirection: 'row',
+    width: 7,
+    height: 7,
+    borderRadius: 20,
+    marginRight: 6,
   },
   dotImage: {
     marginLeft: 5,
@@ -88,5 +93,26 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     marginTop: 10,
+  },
+  listItemImage: {
+    marginTop: 20,
+    marginRight: 10,
+  },
+  paginationContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  paginationDot: {
+    width: 7,
+    height: 7,
+    borderRadius: 20,
+    backgroundColor: '#C4C4C4',
+    marginRight: 6,
+  },
+  activeDot: {
+    width: 22,
+    backgroundColor: '#FE6310',
   },
 });
