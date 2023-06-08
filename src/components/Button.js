@@ -1,27 +1,27 @@
 import React from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
-import Colors from '../assets/colors/Colors';
+import {commonColors} from '../assets/colors/Colors';
 
 function Button({title}) {
   return (
     <TouchableOpacity
       style={{
-        backgroundColor: Colors.button,
+        backgroundColor: commonColors.button,
         width: '90%',
         borderRadius: 10,
-        marginBottom: 10,
+        // marginBottom: 10,
         marginHorizontal: 18,
         padding: 22,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 20,
+        // marginTop: 20,
       }}>
       <Text
         style={{
           textAlign: 'center',
           fontSize: 18,
-          fontWeight: '700',
+          fontFamily: 'Inter-SemiBold',
           color: '#000',
         }}>
         {title}

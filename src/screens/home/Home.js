@@ -27,18 +27,28 @@ function Home({navigation}) {
           <Image source={require('../../assets/images/Vector.png')} />
         </View>
 
-        <Text style={styles.bank}>Create Bank account in 3 minutes</Text>
-        <Text style={[styles.subText, {marginTop: 25}]}>Easy.</Text>
+        <Text style={[styles.bank, {width: 250}]}>
+          Create Bank account in 3 minutes
+        </Text>
+        <Text style={[styles.subText, {marginTop: 27}]}>Easy.</Text>
         <Text style={styles.subText}>Fast.</Text>
         <Text style={styles.subText}>Secure.</Text>
+        <View style={{position: 'relative'}}>
+          <Image
+            source={require('../../assets/images/Ellipse2.png')}
+            style={styles.ellipse2}
+          />
+        </View>
       </ImageBackground>
-      <View style={{position: 'relative'}}>
+      {/* <View style={{position: 'relative'}}>
         <Image
           source={require('../../assets/images/Ellipse2.png')}
           style={styles.ellipse2}
         />
+      </View> */}
+      <View style={{marginTop: 200}}>
+        <Button title={'Create Account'} />
       </View>
-      <Button title={'Create Account'} />
       <TouchableOpacity style={styles.member} onPress={handlePress}>
         <Text style={styles.memberText}>Already Member?</Text>
       </TouchableOpacity>

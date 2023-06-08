@@ -1,15 +1,8 @@
-const white = '#E5E5E5';
-const inputBg = '#002D57';
-const inputBgLine = '#FE6310';
-const button = '#FFD703';
-const card = '#FFD703';
-const green = '#72FF03';
-
-export default {
-  white,
-  inputBg,
-  inputBgLine,
-  button,
-  card,
-  green,
+export const commonColors = {
+  white: '#E5E5E5',
+  inputBg: '#002D57',
+  inputBgLine: '#FE6310',
+  button: '#FFD703',
+  card: '#FFD703',
+  green: '#72FF03',
 };

@@ -1,12 +1,12 @@
 import React, {useState, useRef} from 'react';
 import {View, Text, Image, FlatList, TouchableOpacity} from 'react-native';
-import Colors from '../assets/colors/Colors';
+import {commonColors} from '../assets/colors/Colors';
 
 const MyFlatListComponent = () => {
   const slidesData = [
-    {id: 'slide1', backgroundColor: Colors.card},
-    {id: 'slide2', backgroundColor: Colors.inputBgLine},
-    {id: 'slide3', backgroundColor: Colors.green},
+    {id: 'slide1', backgroundColor: commonColors.card},
+    {id: 'slide2', backgroundColor: commonColors.inputBgLine},
+    {id: 'slide3', backgroundColor: commonColors.green},
   ];
 
   const renderItem = ({item}) => (
@@ -14,7 +14,10 @@ const MyFlatListComponent = () => {
       <View style={styles.slideContent}>
         <View style={styles.slideHeader}>
           <Text style={styles.totalBalanceText}>Total Balance</Text>
-          <Image source={require('../assets/images/Vector2.png')} />
+          <Image
+            source={require('../assets/images/Vector2.png')}
+            style={{marginRight: 17}}
+          />
         </View>
         <Text style={styles.balanceText}>$ 17,982.22</Text>
         <Text style={styles.bcmText}>BCM</Text>
@@ -86,8 +89,9 @@ const styles = {
   slideContent: {
     flex: 1,
     justifyContent: 'center',
-    padding: 20,
-    // marginTop: 20,
+    // padding: 20,
+    marginTop: 20,
+    marginLeft: 23,
   },
   slideHeader: {
     flexDirection: 'row',
@@ -95,21 +99,26 @@ const styles = {
   },
   totalBalanceText: {
     fontSize: 16,
-    fontWeight: '500',
+    fontFamily: 'Inter-Medium',
+    color: '#000000',
   },
   balanceText: {
     fontSize: 24,
-    fontWeight: '900',
+    fontFamily: 'Inter-Black',
+    color: '#000000',
     // marginTop: 20,
   },
   bcmText: {
     fontSize: 14,
-    fontWeight: '700',
+    fontFamily: 'Inter-Bold',
+    color: '#000000',
     marginTop: 25,
   },
   accountText: {
     fontSize: 14,
-    fontWeight: '500',
+    fontFamily: 'Inter-Medium',
+    color: '#000000',
+    marginBottom: 15,
   },
   dot: {
     width: 7,

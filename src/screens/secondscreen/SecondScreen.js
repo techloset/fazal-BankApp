@@ -48,10 +48,18 @@ function SecondScreen() {
         </View>
       </ScrollView>
       <View style={styles.Bottom}>
-        <Vector5 />
-        <Vector4 />
-        <Vector6 />
-        <Vector7 />
+        <TouchableOpacity>
+          <Vector5 />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Vector4 />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Vector6 />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Vector7 />
+        </TouchableOpacity>
       </View>
     </View>
   );

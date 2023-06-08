@@ -1,10 +1,10 @@
 import {StyleSheet} from 'react-native';
-import Colors from '../../assets/colors/Colors';
+import {commonColors} from '../../assets/colors/Colors';
 // import {fonts} from '../../assets/fonts';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.white,
+    backgroundColor: commonColors.white,
     flex: 1,
   },
   background: {
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
   },
   totalText: {
     fontSize: 16,
-    fontWeight: 500,
+    fontFamily: 'Inter-Medium',
     color: '#000',
     marginTop: 20,
   },
@@ -32,6 +32,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 20,
+    marginBottom: 31,
   },
   text3: {
     fontSize: 18,
@@ -55,5 +56,15 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     flexDirection: 'row',
+  },
+  week: {
+    fontSize: 16,
+    fontFamily: 'Inter-Light',
+    color: '#686868',
+  },
+  month: {
+    fontSize: 14,
+    fontWeight: 500,
+    color: '#A5A5A5',
   },
 });

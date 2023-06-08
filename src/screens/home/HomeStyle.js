@@ -1,34 +1,46 @@
 import {StyleSheet} from 'react-native';
-import Colors from '../../assets/colors/Colors';
+import {commonColors} from '../../assets/colors/Colors';
 
 export const styles = StyleSheet.create({
-  container: {backgroundColor: Colors.inputBg, flex: 1},
+  container: {backgroundColor: commonColors.inputBg, flex: 1},
   bank: {
-    fontWeight: '700',
     fontSize: 36,
+    fontFamily: 'Inter-Bold',
     color: '#fff',
     marginTop: 50,
   },
   bankText: {
     color: '#fff',
     fontSize: 18,
-    fontWeight: 700,
+    fontFamily: 'Inter-Bold',
+    textAlign: 'justify',
   },
   subText: {
     color: '#002D57',
-    fontWeight: '700',
+    fontFamily: 'Inter-Bold',
     fontSize: 24,
   },
-  background: {height: 465, width: '98%', flex: 1, paddingLeft: 20},
+  background: {
+    width: '97.5%',
+    flex: 1,
+    // padding: 20,
+    // backgroundColor: '#000',
+    // marginBottom: 40,
+    paddingRight: 20,
+    paddingLeft: 20,
+    paddingVertical: 20,
+  },
   ellipse: {
     alignItems: 'center',
     flexDirection: 'row',
-    marginTop: 54,
+    marginTop: 40,
     justifyContent: 'space-between',
   },
   ellipse2: {
     position: 'absolute',
-    top: -200,
+    // top: -110,
+    marginLeft: -15.5,
+    marginTop: '-5%',
   },
   ellipse3: {
     flexDirection: 'row',
@@ -39,7 +51,8 @@ export const styles = StyleSheet.create({
   member: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+    // marginBottom: 44,
+    marginTop: 17,
   },
   memberText: {
     color: '#fff',

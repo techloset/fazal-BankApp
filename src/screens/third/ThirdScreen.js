@@ -8,19 +8,19 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Vector8 from '../../assets/images/Vector8.svg';
-import Vector9 from '../../assets/images/Vector9.svg';
+import Group17 from '../../assets/images/Group17.svg';
 import Tran from '../../components/Tran';
 import Button from '../../components/Button';
 import {styles} from './ThirdStyle';
 import {useNavigation} from '@react-navigation/native';
-import Colors from '../../assets/colors/Colors';
+import {commonColors} from '../../assets/colors/Colors';
 
 function ThirdScreen(props) {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <View style={{backgroundColor: Colors.inputBg, height: '30%'}}>
+      <View style={{backgroundColor: commonColors.inputBg, height: '32%'}}>
         <ImageBackground
           source={require('../../assets/images/Ellipse5.png')}
           style={styles.background}>
@@ -42,33 +42,33 @@ function ThirdScreen(props) {
         </ImageBackground>
       </View>
       <View style={styles.view2}>
-        <Text style={{fontSize: 16, fontFamily: 'Inter-Light'}}>Weekly | </Text>
+        <Text style={styles.week}>Weekly | </Text>
         <Text
           style={{fontSize: 16, fontFamily: 'Inter-Medium', color: '#002D57'}}>
           Monthly
         </Text>
-        <Text style={{fontSize: 16, fontFamily: 'Inter-Light'}}> | Yearly</Text>
+        <Text style={styles.week}> | Yearly</Text>
       </View>
       <ImageBackground
         source={require('../../assets/images/Vector10.png')}
-        style={{width: 395, height: 145}}>
-        <Vector9 />
+        style={{width: '100%', height: 145}}>
+        <Group17 />
       </ImageBackground>
       <View style={styles.view3}>
-        <Text style={{fontSize: 14, fontWeight: 500}}>Feb </Text>
-        <Text style={{fontSize: 14, fontWeight: 500}}>Mar</Text>
-        <Text style={{fontSize: 14, fontWeight: 500}}>Apr</Text>
-        <Text style={{fontSize: 14, fontWeight: 500}}>May</Text>
+        <Text style={styles.month}>Feb</Text>
+        <Text style={styles.month}>Mar</Text>
+        <Text style={styles.month}>Apr</Text>
+        <Text style={styles.month}>May</Text>
         <Text style={{fontSize: 14, fontWeight: 500, color: '#002D57'}}>
           Jun
         </Text>
-        <Text style={{fontSize: 14, fontWeight: 500}}>Jul</Text>
+        <Text style={styles.month}>Jul</Text>
       </View>
-      <ScrollView>
-        <View style={{marginLeft: 10}}>
+      <ScrollView style={{marginBottom: 24}}>
+        <View style={{padding: 20}}>
           <Tran />
         </View>
-        <Button title={'Order a new card'} />
+        <Button title={'Order a new card'} style={{marginTop: 24}} />
       </ScrollView>
     </View>
   );
