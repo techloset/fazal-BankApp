@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     backgroundColor: commonColors.white,
     flex: 1,
     padding: 20,
+    // marginTop: 32,
   },
   ellipse: {
     alignItems: 'center',
@@ -75,6 +76,7 @@ export const styles = StyleSheet.create({
     // marginLeft: 20,
     flexDirection: 'row',
     justifyContent: 'center',
+    // backgroundColor: '#000',
   },
   dot: {
     // marginTop: 10,
@@ -92,7 +94,7 @@ export const styles = StyleSheet.create({
   Bottom: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 10,
+    marginTop: 20,
   },
   listItemImage: {
     marginTop: 20,
@@ -114,5 +116,30 @@ export const styles = StyleSheet.create({
   activeDot: {
     width: 22,
     backgroundColor: '#FE6310',
+  },
+  inactiveDot: {
+    backgroundColor: '#C4C4C4',
+  },
+  dotContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 15,
+    flexDirection: 'row',
+    // backgroundColor: '#000',
+    // marginTop: 10,
+    // marginBottom: 50,
+  },
+  dot: {
+    backgroundColor: '#FE6310',
+    height: 7,
+    width: 22,
+    borderRadius: 10,
+  },
+  dot1: {
+    backgroundColor: '#C4C4C4',
+    height: 7,
+    width: 7,
+    borderRadius: 10,
+    marginLeft: 8,
   },
 });

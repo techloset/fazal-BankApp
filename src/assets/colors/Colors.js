@@ -1,5 +1,5 @@
 export const commonColors = {
-  white: '#E5E5E5',
+  white: '#ffffff',
   inputBg: '#002D57',
   inputBgLine: '#FE6310',
   button: '#FFD703',

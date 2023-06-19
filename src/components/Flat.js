@@ -72,7 +72,7 @@ const MyFlatListComponent = () => {
 const styles = {
   container: {
     height: 161,
-    marginTop: 20,
+    marginTop: 32,
   },
   slide: {
     flex: 1,
@@ -80,6 +80,7 @@ const styles = {
     borderRadius: 10,
     marginRight: 10,
     width: 300,
+    // marginTop: 32,
   },
   defaultSlideContent: {
     flex: 1,

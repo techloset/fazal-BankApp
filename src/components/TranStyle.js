@@ -33,7 +33,7 @@ export const styles = StyleSheet.create({
   },
   Text: {
     fontSize: 14,
-    fontFamily: 'Inter-Semibold',
+    fontFamily: 'Inter-SemiBold',
     color: '#002D57',
   },
   text2: {

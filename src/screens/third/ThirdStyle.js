@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {commonColors} from '../../assets/colors/Colors';
+import {scale} from 'react-native-size-matters';
 // import {fonts} from '../../assets/fonts';
 
 export const styles = StyleSheet.create({
@@ -8,8 +9,9 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   background: {
-    width: '90%',
+    // width: '95%',
     flex: 1,
+    // marginLeft: 10,
     padding: 20,
   },
   total: {
@@ -43,7 +45,7 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontFamily: 'Inter-SemiBold',
     color: '#fff',
-    marginRight: 100,
+    marginRight: scale(130),
   },
   view2: {
     marginTop: 10,
@@ -64,7 +66,7 @@ export const styles = StyleSheet.create({
   },
   month: {
     fontSize: 14,
-    fontWeight: 500,
+    fontFamily: 'Inter-Medium',
     color: '#A5A5A5',
   },
 });

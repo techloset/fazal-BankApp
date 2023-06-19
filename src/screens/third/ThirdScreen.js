@@ -14,25 +14,30 @@ import Button from '../../components/Button';
 import {styles} from './ThirdStyle';
 import {useNavigation} from '@react-navigation/native';
 import {commonColors} from '../../assets/colors/Colors';
+import {scale, verticalScale, moderateScale} from 'react-native-size-matters';
+// import Ellipse7 from '../../assets/images/Ellipse7.svg';
 
 function ThirdScreen(props) {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <View style={{backgroundColor: commonColors.inputBg, height: '32%'}}>
+      <View
+        style={{
+          backgroundColor: commonColors.inputBg,
+          height: '32%',
+          // marginLeft: 10,
+          // padding: 10,
+        }}>
         <ImageBackground
-          source={require('../../assets/images/Ellipse5.png')}
+          source={require('../../assets/images/Group15.png')}
           style={styles.background}>
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Vector8 style={{marginTop: 10}} />
           </TouchableOpacity>
           <View style={styles.total}>
             <Text style={styles.totalText}>Total Balance</Text>
-            <Image
-              source={require('../../assets/images/Visa.png')}
-              style={{marginRight: -35}}
-            />
+            <Image source={require('../../assets/images/Visa.png')} />
           </View>
           <Text style={styles.text2}>$4,661.91</Text>
           <View style={styles.view}>
@@ -51,7 +56,7 @@ function ThirdScreen(props) {
       </View>
       <ImageBackground
         source={require('../../assets/images/Vector10.png')}
-        style={{width: '100%', height: 145}}>
+        style={{width: '100%', height: verticalScale(125)}}>
         <Group17 />
       </ImageBackground>
       <View style={styles.view3}>
@@ -59,7 +64,8 @@ function ThirdScreen(props) {
         <Text style={styles.month}>Mar</Text>
         <Text style={styles.month}>Apr</Text>
         <Text style={styles.month}>May</Text>
-        <Text style={{fontSize: 14, fontWeight: 500, color: '#002D57'}}>
+        <Text
+          style={{fontSize: 14, fontFamily: 'Inter-Medium', color: '#002D57'}}>
           Jun
         </Text>
         <Text style={styles.month}>Jul</Text>
